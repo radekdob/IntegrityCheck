@@ -1,4 +1,5 @@
 IntegrityCheckSPA
+
 Do prawidłowego działania niezbędne jest równoczesne uruchomienie aplikacji serwerowej:
 
 Do prawidłowego działania niezbędne są nastepujące rzeczy:
