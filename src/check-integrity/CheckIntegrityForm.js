@@ -38,7 +38,7 @@ const CheckIntegrityForm = () => {
         if (isAuth) {
             headers.Authorization = getBasicAuthHeaderValue()
         }
-        axios.post("http://localhost:8080/v1/integrity/", data, {
+        axios.post("https://localhost:443/v1/integrity/", data, {
             headers
         })
             .then(response => {

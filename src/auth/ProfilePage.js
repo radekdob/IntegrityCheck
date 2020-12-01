@@ -15,7 +15,7 @@ const ProfilePage = () => {
             'Authorization': getBasicAuthHeaderValue()
         }
 
-        axios.get('http://localhost:8080/auth/profile', {
+        axios.get('https://localhost:8443/auth/profile', {
             headers: header
         })
             .then(response => {

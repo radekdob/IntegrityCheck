@@ -11,23 +11,23 @@ import ProfilePage from "./auth/ProfilePage"
 import {isUserLogged} from './shared/UserUtilities'
 import Footer from "./footer/Footer";
 
-const App = () => {
-    const [isAuth, setAuth] = useState(false);
+const App = ({authState}) => {
+    const [isAuth, setAuth] = useState(authState);
     const [firstLoad, setFirstLoad] = useState(false);
 
 
-    useEffect(() => {
+    /*useEffect(() => {
 
         if (isUserLogged() && !isAuth) {
             setAuth(true)
         }
         setFirstLoad(true)
-    }, [])
+    }, [])*/
 
     return (
         <div className="container">
 
-            {firstLoad ? <Router>
+             <Router data-testid="router" >
                 <AuthContext.Provider value={{isAuth, setAuth}}>
                     <Navbar/>
                     <Switch>
@@ -38,7 +38,7 @@ const App = () => {
                     </Switch>
                     <Footer/>
                 </AuthContext.Provider>
-            </Router> : null}
+            </Router>
         </div>
 
     );

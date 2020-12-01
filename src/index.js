@@ -3,10 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {isUserLogged} from './shared/UserUtilities'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App authState={isUserLogged()}  />
   </React.StrictMode>,
   document.getElementById('root')
 );

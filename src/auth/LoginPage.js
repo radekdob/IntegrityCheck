@@ -10,14 +10,14 @@ import {faCheck, faLock, faUser} from '@fortawesome/free-solid-svg-icons'
 const LoginPage = () => {
 
     const history = useHistory();
-    const {isAuth, setAuth} = useContext(AuthContext);
+    const {setAuth} = useContext(AuthContext);
     const [failureText, setFailureText] = useState('')
 
     const {register, handleSubmit, watch, errors} = useForm({mode: 'onChange'});
     const onSubmit = data => {
         const credentialsStringBtoa = window.btoa(data.username + ':' + data.password);
 
-        axios.get("http://localhost:8080/auth/", {
+        axios.get("https://localhost:8443/auth/", {
             headers: {
                 'Authorization': 'Basic ' + credentialsStringBtoa,
                 'Content-Type': 'application/json'
