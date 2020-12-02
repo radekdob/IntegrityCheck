@@ -1,4 +1,4 @@
-# IntegrityCheckSPA
+# IntegrityCheckFrontend
 
 Do prawidłowego działania niezbędne jest równoczesne uruchomienie aplikacji serwerowej:
 
