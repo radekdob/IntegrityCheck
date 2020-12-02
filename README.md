@@ -23,4 +23,4 @@ W przypadku, gdy chcemy uruchomić sklonowaną aplikacje z repozytorium (czyli n
 3. Otworzyć przeglądarkę i wejść na stronę https://localhost:8443/auth/ (adres aplikacji backendowej) i wpisać dane do logowania (ten krok jest konieczny, aby firefox zaufał      certyfikatowi aplikacji serwerowej) - jest to jednorazowa czynność, w późniejszych uruchomieniach jest zbędna.
 4. Uruchomić odpowiednią przeglądarkę i przejść pod adres: https://localhost:3000 i zaufać certyfikatowi.
 
-
+Jeśli, któryś z kroków nie został wykonany poprawnie to podczas logowania otrzymamy komunikat "Błąd połączenia, Spróbuj ponownie.", a w konsoli deweloperskiej "GET https://localhost:8443/auth/ net::ERR_CERT_AUTHORITY_INVALID".
