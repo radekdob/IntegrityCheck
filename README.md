@@ -1,4 +1,4 @@
-IntegrityCheckSPA
+# IntegrityCheckSPA
 
 Do prawidłowego działania niezbędne jest równoczesne uruchomienie aplikacji serwerowej:
 
@@ -10,5 +10,5 @@ oraz zainstalowane następujące programy:
 Instrukacja uruchomienia:
 
 1. W katalogu głownym aplikacji uruchomić terminal
-2. Poprzez komendę "npm start" uruchomić serwer deweloperski
+2. Poprzez komendę "HTTPS=true npm start" uruchomić serwer deweloperski
 3. Uruchomić odpowiednią przeglądarkę i przejść pod adres: https://localhost:3000
