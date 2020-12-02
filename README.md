@@ -11,9 +11,9 @@ Instrukacja uruchomienia:
 
 Uruchomić aplikację serwerową: https://github.com/radekdob/IntegrityCheckBackend
 
-W przypadku aplikacji zbudowanej (zalecane): 
+W przypadku aplikacji zbudowanej (spakowanej do pliku IntegrityFrontend): 
 1. Zainstalować serwer https https://www.npmjs.com/package/https-localhost - komenda "npm i -g --only=prod https-localhost"
-2. Uruchomić terminal w folderze "IntegrityCheckProd" i zastosować komendę "serve" - możliwe komunikaty o zaufaniu wygenerowanemu certyfikatowi
+2. Uruchomić terminal w folderze "IntegrityCheck" (po wypakowaniu z .zip) i zastosować komendę "serve" - możliwe komunikaty o zaufaniu wygenerowanemu certyfikatowi
 3. Otworzyć przeglądarkę i wejść na stronę https://localhost:8443/auth/ (adres aplikacji backendowej) i wpisać dane do logowania (ten krok jest konieczny, aby firefox zaufał certyfikatowi aplikacji serwerowej) - jest to jednorazowa czynność, w późniejszych uruchomieniach jest zbędna.
 4. Otworzyć aplikację kliencką przez przeglądarkę Firefox https://localhost:443/ i zaufać certyfikatowi.
 
