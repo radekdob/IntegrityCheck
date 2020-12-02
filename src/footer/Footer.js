@@ -9,9 +9,8 @@ const Footer = () => {
             <div className="content has-text-centered">
                 <p>
                     <strong>IntegrityCheck</strong> wykonany przez ppor. Radosława Dobrzyńskiego.
-                    <hr/>
-                    <p className="is-italic">radekdob@gmail.com</p>
                 </p>
+                <p className="is-italic">radekdob@gmail.com</p>
             </div>
         </footer>
     )

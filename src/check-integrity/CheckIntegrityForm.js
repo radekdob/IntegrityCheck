@@ -38,7 +38,7 @@ const CheckIntegrityForm = () => {
         if (isAuth) {
             headers.Authorization = getBasicAuthHeaderValue()
         }
-        axios.post("https://localhost:443/v1/integrity/", data, {
+        axios.post("https://localhost:8443/v1/integrity/", data, {
             headers
         })
             .then(response => {
@@ -55,10 +55,21 @@ const CheckIntegrityForm = () => {
             })
             .catch(error => {
                 clearTimeout(timeout);
-                setCheckIntegrityResponse({
-                    status: false,
-                    message: error.response.data.message
-                })
+
+                if (error.response) {
+                    setCheckIntegrityResponse({
+                        status: false,
+                        message: error.response.data?.message
+                    })
+                }else {
+                    setCheckIntegrityResponse({
+                        status: false,
+                        message: "Błąd połączenia."
+                    })
+                }
+
+
+
                 setIsLoading(false)
                 setShowLoadingInfo(false)
                 setShowResult(true)
